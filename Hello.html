@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Salon</title>
+    <script class="src"></script>
+
+    <style>
+        body
+        {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav
+        {
+            background: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 40px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav h2
+        {
+            color: gold;
+        }
+
+        nav a
+        {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        .hero
+        {
+            height: 90vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1') center/cover;
+           display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1
+        {
+            font-size: 50px;
+        }
+
+        .btn
+        {
+            padding: 12px 25px;
+            background: gold;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover
+        {
+            background: orange;
+        }
+
+        .services
+        {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .boxes
+        {
+           display: flex;
+           justify-content: space-around;
+           flex-wrap: wrap;
+        }
+
+        .box
+        {
+            width: 30%;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .box:hover
+        {
+            transform: scale(1.0s);
+        }
+
+
+
+        .gallery
+        {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .gallery img
+        {
+            width: 40%;
+            margin: 10px;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover
+        {
+            transform: scale(1.1);
+        }
+
+        .contact
+        {
+            background: black;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        input, textarea
+        {
+            width: 80%;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .whatsapp
+        {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: green;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        footer
+        {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media(max-width: 768px) {
+            .box {
+
+                width: 90%;
+            }
+
+            .gallery img {
+
+                width: 90%;
+            }
+        }
+    </style>
+    <head>
+        <body>
+            <nav>
+                <h2>Royal Salon</h2>
+                <div>
+                    <a href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                </div>
+            </nav>
+
+            <section class="hero">
+                <div>
+                    <h1>Look Stylish & Confident </h1>
+                    <p>Best Salon in Your City</p>
+                    <button class="btn">Book Appointment</button>
+                </div>
+            </section>
+
+            <section class="services">
+                <h2>Our Services</h2>
+                <div class="boxes">
+                    <h3>Hair Cut</h3>
+                    <p>Professional haircut for men & women</p>
+                </div>
+
+                <div class="box">
+                    <h3>Facial</h3>
+                    <p>Glow & skincare treatment</p>
+                </div>
+
+                <div class="box">
+                    <h3>Beard Stylish</h3>
+                    <p>Trendy beard designs</p>
+                </div>
+            </div>
+            </section>
+
+            <section class="gallery">
+                <h2>Our Work</h2>
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
+                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+                <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1">
+            </section>
+
+            <section class="contact">
+                <h2>Contact Us</h2>
+
+                <input type="text" placeholder="Your Name"><br>
+                <input type="email" placeholder="Your Email"><br>
+                <textarea placeholder="Your Message"></textarea><br>
+                <button class="btn">send</button>
+                <p>📞 call/WhatsApp: 8448613965</p>
+            </section>
+
+            <a href="https://wa.me/918448613965" class="whatsapp">💬</a>
+
+            <footer>
+                <p>©️ 2026 Royal Salon | Designed by Armaan</p>
+            </footer>
+</body>
+</html>
